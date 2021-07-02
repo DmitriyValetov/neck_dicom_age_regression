@@ -214,7 +214,7 @@ def test_r3d_18(verbose=False):
     with torch.no_grad():
         model = r3d_18(3, 'cpu')
         if verbose:
-            print(model(torch.randn(1,1,64,64,64)))
+            print(model(torch.randn(1,1,64,64,64))) # batch, color, depth, width, height
 
 
 if __name__ == "__main__":
